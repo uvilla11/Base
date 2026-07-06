@@ -32,9 +32,9 @@ take_screenshots() {
 
         xcodebuild -project "$PROJ/Base.xcodeproj" -scheme Base -sdk iphonesimulator -destination "id=$device_id" build &>/dev/null
         APP=$(find ~/Library/Developer/Xcode/DerivedData/Base-*/Build/Products/Debug-iphonesimulator -name "Base.app" -maxdepth 1 | head -1)
-        xcrun simctl terminate "$device_id" com.base.app 2>/dev/null
+        xcrun simctl terminate "$device_id" com.basecalc.app 2>/dev/null
         xcrun simctl install "$device_id" "$APP"
-        xcrun simctl launch "$device_id" com.base.app &>/dev/null
+        xcrun simctl launch "$device_id" com.basecalc.app &>/dev/null
         sleep 3
 
         xcrun simctl io "$device_id" screenshot "$OUT/${label}_${tab_name}.png" 2>/dev/null
