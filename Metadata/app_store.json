@@ -6,7 +6,7 @@
   "keywords": "calculator,unit converter,tip calculator,scientific calculator,math,conversion,split bill",
   "supportURL": "https://github.com/uvilla11/Base/issues",
   "marketingURL": null,
-  "privacyURL": "https://uvilla11.github.io/Base/privacy",
+  "privacyURL": "https://uvilla11.github.io/Base/",
   "promoText": "Quick math, quick conversions. No account needed.",
   "releaseNotes": "• Initial release\n• Calculator with Shunting-yard expression parser\n• Unit converter — 5 categories, 30+ units\n• Tip splitter with adjustable tip and person count\n• Dark & light mode\n• History with tap-to-recall",
   "primaryCategory": "UTILITIES",

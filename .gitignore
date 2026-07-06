@@ -53,6 +53,9 @@ fastlane/test_output
 *.provisionprofile
 *.cer
 
+### Build artifacts ###
+build/
+
 ### Secrets ###
 *.env
 fastlane/.env

@@ -17,6 +17,7 @@ enum Tab: String, CaseIterable {
 struct ContentView: View {
     @State private var selectedTab: Tab = .calculator
     @Namespace private var tabIndicator
+    @State private var showingTipJar = false
 
     var body: some View {
         ZStack {
@@ -37,6 +38,10 @@ struct ContentView: View {
                 .transition(.opacity.combined(with: .scale(scale: 0.96)))
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
+        }
+        .sheet(isPresented: $showingTipJar) {
+            TipJarView()
+                .presentationDetents([.medium])
         }
     }
 
@@ -75,6 +80,18 @@ struct ContentView: View {
                 .accessibilityAddTraits(selectedTab == tab ? .isSelected : [])
             }
             Spacer()
+            Button {
+                Haptics.op()
+                showingTipJar = true
+            } label: {
+                Image(systemName: "heart.fill")
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundStyle(Color.accentColor)
+                    .frame(width: 36, height: 36)
+                    .background(Capsule().fill(Theme.keySurface))
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel("Tip jar")
         }
     }
 }

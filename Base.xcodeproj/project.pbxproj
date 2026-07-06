@@ -21,6 +21,8 @@
 		AA00000000000000000000C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10000000000000000000E; };
 		AA00000000000000000000D /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10000000000000000000F; };
 		AA00000000000000000000E /* TipCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000010; };
+		AA0000000000000000000F /* StoreTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000011; };
+		AA00000000000000000010 /* TipJarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000012; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		AA10000000000000000000E /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		AA10000000000000000000F /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
 		AA100000000000000000010 /* TipCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorView.swift; sourceTree = "<group>"; };
+		AA100000000000000000011 /* StoreTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTip.swift; sourceTree = "<group>"; };
+		AA100000000000000000012 /* TipJarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipJarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 				AA100000000000000000005 /* UnitConversion.swift */,
 				AA10000000000000000000E /* Theme.swift */,
 				AA10000000000000000000F /* Haptics.swift */,
+				AA100000000000000000011 /* StoreTip.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -81,6 +86,7 @@
 				AA100000000000000000009 /* HistoryView.swift */,
 				AA10000000000000000000A /* UnitConverterView.swift */,
 				AA100000000000000000010 /* TipCalculatorView.swift */,
+				AA100000000000000000012 /* TipJarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,6 +198,8 @@
 				AA00000000000000000000C /* Theme.swift in Sources */,
 				AA00000000000000000000D /* Haptics.swift in Sources */,
 				AA00000000000000000000E /* TipCalculatorView.swift in Sources */,
+				AA0000000000000000000F /* StoreTip.swift in Sources */,
+				AA00000000000000000010 /* TipJarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

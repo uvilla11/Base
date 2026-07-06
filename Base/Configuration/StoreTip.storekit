@@ -1,0 +1,53 @@
+{
+  "identifier" : "Base",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "description" : "Support the app. No ads, no account, no catch.",
+      "displayName" : "Small Tip",
+      "familyShareable" : false,
+      "id" : "base.tip.small",
+      "referenceName" : "Small Tip",
+      "type" : "NON_CONSUMABLE"
+    },
+    {
+      "description" : "If Base has saved you time, this is the one.",
+      "displayName" : "Medium Tip",
+      "familyShareable" : false,
+      "id" : "base.tip.medium",
+      "referenceName" : "Medium Tip",
+      "type" : "NON_CONSUMABLE"
+    },
+    {
+      "description" : "Generous support. Your name in the credits.",
+      "displayName" : "Large Tip",
+      "familyShareable" : false,
+      "id" : "base.tip.large",
+      "referenceName" : "Large Tip",
+      "type" : "NON_CONSUMABLE"
+    }
+  ],
+  "settings" : {
+    "developerTeamID" : "",
+    "localizations" : [
+      {
+        "description" : "Base is a free app. If you find it useful, here's a tip jar.",
+        "displayName" : "Base",
+        "locales" : [
+          {
+            "id" : "en-US",
+            "name" : "English (U.S.)"
+          }
+        ]
+      }
+    ]
+  },
+  "version" : {
+    "majorVersion" : 2,
+    "originalVersion" : "1.0",
+    "majorLocalization" : "en-US",
+    "rationale" : "Tip jar products for Base"
+  }
+}

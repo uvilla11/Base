@@ -1,0 +1,2 @@
+// xcscheme flags for StoreKit testing
+// - StoreKitConfiguration: Base/Configuration/StoreTip.storekit
