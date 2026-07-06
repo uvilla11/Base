@@ -1,0 +1,4 @@
+app_identifier("com.base.app")
+apple_id("uvilla11@users.noreply.github.com")
+itc_team_id(nil)
+team_id(nil)

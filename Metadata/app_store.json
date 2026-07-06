@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "appName": "Base",
+  "subtitle": "Calculator & Unit Converter",
+  "description": "Base is a personal number & unit Swiss-army-knife. Calculator, unit converter, and tip splitter — one clean screen, no ads, no account, no subscription.\n\nFeatures:\n• Calculator with live result preview and history\n• Unit converter for length, mass, volume, temperature, and currency\n• Tip splitter — adjust tip percentage, split any number of ways\n• Beautiful dark & light mode with haptic feedback\n• No account, no analytics, no ads\n\n“Finally, a calculator that doesn't try to sell me something.”",
+  "keywords": "calculator,unit converter,tip calculator,scientific calculator,math,conversion,split bill",
+  "supportURL": "https://github.com/uvilla11/Base/issues",
+  "marketingURL": null,
+  "privacyURL": "https://uvilla11.github.io/Base/privacy",
+  "promoText": "Quick math, quick conversions. No account needed.",
+  "releaseNotes": "• Initial release\n• Calculator with Shunting-yard expression parser\n• Unit converter — 5 categories, 30+ units\n• Tip splitter with adjustable tip and person count\n• Dark & light mode\n• History with tap-to-recall",
+  "primaryCategory": "UTILITIES",
+  "secondaryCategory": null,
+  "ageRating": "4+",
+  "priceTier": 0,
+  "iapTiers": [
+    { "product_id": "base.tip.small", "tier": 1, "name": "Small Tip" },
+    { "product_id": "base.tip.medium", "tier": 3, "name": "Medium Tip" },
+    { "product_id": "base.tip.large", "tier": 5, "name": "Large Tip" }
+  ]
+}

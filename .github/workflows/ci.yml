@@ -1,0 +1,67 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Logic Self-Check
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run engine self-check
+        run: swift Scripts/logic_check.swift
+        working-directory: ${{ github.workspace }}/Base
+
+  test:
+    name: Test
+    runs-on: macos-15
+    needs: check
+    steps:
+      - uses: actions/checkout@v4
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+      - name: Run unit tests
+        run: |
+          xcodebuild test \
+            -project Base.xcodeproj \
+            -scheme Base \
+            -sdk iphonesimulator \
+            -destination 'platform=iOS Simulator,name=iPhone 17' \
+            -resultBundlePath artifacts/Base.xcresult \
+            CODE_SIGNING_ALLOWED=NO | xcpretty && exit ${PIPESTATUS[0]}
+      - uses: kishikawakatsumi/xcresulttool@v1
+        with:
+          path: artifacts/Base.xcresult
+        if: success() || failure()
+
+  build:
+    name: Build (Release)
+    runs-on: macos-15
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+      - name: Build release archive
+        run: |
+          xcodebuild clean archive \
+            -project Base.xcodeproj \
+            -scheme Base \
+            -configuration Release \
+            -archivePath artifacts/Base.xcarchive \
+            -destination 'generic/platform=iOS' \
+            CODE_SIGNING_ALLOWED=NO | xcpretty && exit ${PIPESTATUS[0]}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Base.xcarchive
+          path: artifacts/Base.xcarchive

@@ -1,0 +1,60 @@
+### Xcode ###
+# Xcode 10+ generated .xcodeproj internal files (not the pbxproj)
+*.xcuserdata
+*.xcscmblueprint
+*.xcscheme
+!*.xcscheme
+*.xcbkptlist
+*.xcplugindata
+*.xctesttimingdata
+*.xctestrun
+!default.*.xcconfig
+
+### Xcode Patch ###
+*.xcodeproj/xcshareddata/xcschemes/*.xcscheme
+*.playground
+*.timeline
+*.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+!default
+
+### Swift ###
+*.build/
+*.buildtimestamp
+.build*
+.build/
+.swiftpm/
+.build/
+DerivedData/
+*.o
+*~
+*.swp
+*.sw~lock
+#*#
+
+### CocoaPods ###
+Pods/
+
+### Carthage ###
+Carthage/Build/
+
+### Fastlane ###
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+*.log
+
+### macOS ###
+.DS_Store
+*.pem
+*.cert
+*.p12
+*.mobileprovision
+*.provisionprofile
+*.cer
+
+### Secrets ###
+*.env
+fastlane/.env
+fastlane/.env.secret
+*.env.secret

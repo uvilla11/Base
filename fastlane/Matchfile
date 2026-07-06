@@ -1,0 +1,14 @@
+# Fastlane Match — manages code signing certificates.
+# Set these environment variables in CI / .env.secret:
+#   MATCH_GIT_URL:  git@github.com:uvilla11/Base-certs.git
+#   MATCH_PASSWORD: <your strong password>
+#   MATCH_KEYCHAIN_NAME: base.keychain
+
+git_url(ENV["MATCH_GIT_URL"])
+storage_mode("git")
+type("appstore")
+app_identifier(["com.base.app"])
+username(ENV["APP_STORE_CONNECT_USERNAME"] || "")
+keychain_name(ENV["MATCH_KEYCHAIN_NAME"] || "base.keychain")
+generate_apple_certs(true)
+skip_docs(true)

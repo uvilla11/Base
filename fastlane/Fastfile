@@ -1,0 +1,78 @@
+# Fastlane configuration for Base
+# Install: brew install fastlane
+# Run:     cd fastlane && fastlane deploy
+
+default_platform(:ios)
+
+platform :ios do
+  lane :test do
+    run_tests(
+      project: "Base.xcodeproj",
+      scheme: "Base",
+      devices: ["iPhone 17"],
+      code_signing_style: "Automatic"
+    )
+  end
+
+  lane :build do
+    match(type: "appstore")
+    build_app(
+      project: "Base.xcodeproj",
+      scheme: "Base",
+      configuration: "Release",
+      export_method: "app-store",
+      output_directory: "build",
+      output_name: "Base.ipa"
+    )
+  end
+
+  lane :deploy do |options|
+    match(type: "appstore")
+    build_app(
+      project: "Base.xcodeproj",
+      scheme: "Base",
+      configuration: "Release",
+      export_method: "app-store",
+      output_directory: "build",
+      output_name: "Base.ipa"
+    )
+    upload_to_testflight(
+      skip_waiting_for_build_processing: true,
+      changelog: options[:changelog] || "Bug fixes and improvements."
+    )
+  end
+
+  lane :release do
+    match(type: "appstore")
+    build_app(
+      project: "Base.xcodeproj",
+      scheme: "Base",
+      configuration: "Release",
+      export_method: "app-store",
+      output_directory: "build",
+      output_name: "Base.ipa"
+    )
+    upload_to_app_store(
+      skip_metadata: false,
+      skip_screenshots: false,
+      submit_for_review: true,
+      submit_information: {
+        add_id_info_uses_idfa: false,
+        content_rights_contains_third_party_content: false,
+        export_compliance_available_on_french_store: false,
+        export_compliance_contains_proprietary_crypto: false,
+        export_compliance_contains_third_party_crypto: false,
+        export_compliance_is_exempt: true
+      }
+    )
+  end
+
+  lane :screenshots do
+    capture_screenshots(
+      project: "Base.xcodeproj",
+      scheme: "Base",
+      output_directory: "screenshots",
+      languages: ["en-US"]
+    )
+  end
+end
