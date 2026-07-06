@@ -7,7 +7,7 @@
 git_url(ENV["MATCH_GIT_URL"])
 storage_mode("git")
 type("appstore")
-app_identifier(["com.base.app"])
+app_identifier(["com.basecalc.app"])
 username(ENV["APP_STORE_CONNECT_USERNAME"] || "")
 keychain_name(ENV["MATCH_KEYCHAIN_NAME"] || "base.keychain")
 generate_apple_certs(true)
