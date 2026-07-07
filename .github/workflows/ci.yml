@@ -17,8 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run engine self-check
-        run: swift Scripts/logic_check.swift
-        working-directory: ${{ github.workspace }}/Base
+        run: bash Scripts/check.sh
 
   test:
     name: Test
