@@ -1,0 +1,19 @@
+name: Base
+description: Build and distribute Base to App Store Connect
+
+environments:
+  - name: Base
+    xcodeVersion: "26.0"
+    distribution:
+      method: app-store-connect
+
+build:
+  targets:
+    Base: all
+  actions:
+    - kind: archive
+
+archive:
+  distribute:
+    method: app-store-connect
+    destination: app-store-connect

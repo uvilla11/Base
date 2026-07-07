@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA000000000000000000001 /* BaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000001; };
-		AA000000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000002; };
-		AA000000000000000000003 /* CalculationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000003; };
-		AA000000000000000000004 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000004; };
-		AA000000000000000000005 /* UnitConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000005; };
-		AA000000000000000000006 /* CalculatorVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000006; };
-		AA000000000000000000007 /* UnitConverterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000007; };
-		AA000000000000000000008 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000008; };
-		AA000000000000000000009 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000009; };
-		AA00000000000000000000A /* UnitConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10000000000000000000A; };
-		AA00000000000000000000B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA10000000000000000000B; };
-		AA00000000000000000000C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10000000000000000000E; };
-		AA00000000000000000000D /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10000000000000000000F; };
-		AA00000000000000000000E /* TipCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000010; };
-		AA0000000000000000000F /* StoreTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000011; };
-		AA00000000000000000010 /* TipJarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000012; };
+		AA000000000000000000001 /* BaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000001 /* BaseApp.swift */; };
+		AA000000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000002 /* ContentView.swift */; };
+		AA000000000000000000003 /* CalculationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000003 /* CalculationEngine.swift */; };
+		AA000000000000000000004 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000004 /* Expression.swift */; };
+		AA000000000000000000005 /* UnitConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000005 /* UnitConversion.swift */; };
+		AA000000000000000000006 /* CalculatorVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000006 /* CalculatorVM.swift */; };
+		AA000000000000000000007 /* UnitConverterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000007 /* UnitConverterVM.swift */; };
+		AA000000000000000000008 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000008 /* CalculatorView.swift */; };
+		AA000000000000000000009 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000009 /* HistoryView.swift */; };
+		AA00000000000000000000A /* UnitConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10000000000000000000A /* UnitConverterView.swift */; };
+		AA00000000000000000000B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA10000000000000000000B /* Assets.xcassets */; };
+		AA00000000000000000000C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10000000000000000000E /* Theme.swift */; };
+		AA00000000000000000000D /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10000000000000000000F /* Haptics.swift */; };
+		AA00000000000000000000E /* TipCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000010 /* TipCalculatorView.swift */; };
+		AA0000000000000000000F /* StoreTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000011 /* StoreTip.swift */; };
+		AA00000000000000000010 /* TipJarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100000000000000000012 /* TipJarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +47,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AA300000000000000000001 = {
+		AA300000000000000000001 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -124,13 +124,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AA40000000000000000001 = {
+		AA40000000000000000001 /* Base */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA50000000000000000001;
+			buildConfigurationList = AA50000000000000000001 /* Build configuration list for PBXNativeTarget "Base" */;
 			buildPhases = (
-				AA60000000000000000001,
-				AA300000000000000000001,
-				AA60000000000000000002,
+				AA60000000000000000001 /* Sources */,
+				AA300000000000000000001 /* Frameworks */,
+				AA60000000000000000002 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -138,20 +138,20 @@
 			);
 			name = Base;
 			productName = Base;
-			productReference = AA10000000000000000000D;
+			productReference = AA10000000000000000000D /* Base.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AA70000000000000000001 = {
+		AA70000000000000000001 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 2700;
 			};
-			buildConfigurationList = AA50000000000000000002;
+			buildConfigurationList = AA50000000000000000002 /* Build configuration list for PBXProject "Base" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -160,17 +160,17 @@
 				Base,
 			);
 			mainGroup = AA20000000000000000006;
-			productRefGroup = AA20000000000000000005;
+			productRefGroup = AA20000000000000000005 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AA40000000000000000001,
+				AA40000000000000000001 /* Base */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AA60000000000000000002 = {
+		AA60000000000000000002 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -181,7 +181,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AA60000000000000000001 = {
+		AA60000000000000000001 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -212,7 +212,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Base/Info.plist;
@@ -239,7 +239,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Base/Info.plist;
@@ -269,20 +269,48 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = KD8F897QAK;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -297,14 +325,42 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = KD8F897QAK;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -313,7 +369,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AA50000000000000000001 = {
+		AA50000000000000000001 /* Build configuration list for PBXNativeTarget "Base" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA80000000000000000001 /* Debug */,
@@ -322,7 +378,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA50000000000000000002 = {
+		AA50000000000000000002 /* Build configuration list for PBXProject "Base" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA80000000000000000003 /* Debug */,
@@ -332,7 +388,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
 	};
-	rootObject = AA70000000000000000001;
+	rootObject = AA70000000000000000001 /* Project object */;
 }
